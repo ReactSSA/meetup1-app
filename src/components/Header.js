@@ -8,6 +8,7 @@ const style = {
         flexDirection: 'row',
         height: 60,
         justifyContent: 'space-between',
+        marginBottom: 8,
         paddingHorizontal: 16,
         shadowColor: 'rgba(0, 0, 0, 0.3)',
         shadowOffset: {
