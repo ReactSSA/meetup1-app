@@ -7,6 +7,11 @@ const style = {
         backgroundColor: '#282c34',
         flex: 1,
         justifyContent: 'center'
+    },
+    text: {
+        color: 'white',
+        fontSize: 24,
+        marginTop: 16
     }
 };
 
@@ -14,7 +19,7 @@ const Loading = () => {
     return (
         <View style={style.container}>
             <Image source={require('../images/reactssa.png')} />
-            <Text>Carregando...</Text>
+            <Text style={style.text}>Carregando...</Text>
         </View>
     );
 }
