@@ -4,10 +4,9 @@
 
 Antes de testar ou iniciar o desenvolvimento, garanta que as dependências do projeto estão devidamente instaladas de acordo com seu sistema operacional.
 
-* [Node](https://nodejs.org/en/download/package-manager/)
+* [Node v6+ with npm v3+](https://nodejs.org/en/download/package-manager/)
 * [Yarn](https://yarnpkg.com/pt-BR/docs/install)
 * [Watchman](https://facebook.github.io/watchman/docs/install.html)
-* [React Native Cli](https://facebook.github.io/react-native/docs/getting-started.html#the-react-native-cli)
 * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (para MacOS)
 * [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Android Studio](https://developer.android.com/studio/install.html)
@@ -27,10 +26,14 @@ Para testar o aplicativo:
 
 #### Android
 
-`react-native run-android`
+Com yarn: `yarn run android`
+
+Com npm: `npm run android`
 
 #### iOS
 
-`react-native run-ios`
+Com yarn: `yarn run ios`
 
-Esse projeto foi criado pelo [ReactSSA](http://react.salvador.br) em parceria com a [Editora Sanar](https://editorasanar.com.br/talentos) com [Create React Native App](https://github.com/facebookincubator/create-react-native-app).
+Com npm: `npm run ios`
+
+Esse projeto foi criado pelo [ReactSSA](http://react.salvador.br) em parceria com a [Editora Sanar](https://editorasanar.com.br/talentos) com [Create React Native App](https://github.com/react-community/create-react-native-app).
