@@ -1,5 +1,10 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "name": "ReactSSA Meetup #1",
+    "description": "Aplicativo React Native criado no workshop do Meetup ReactSSA #1",
+    "slug": "reactssa-meetup-1",
+    "sdkVersion": "26.0.0",
+    "version": "1.0.0",
+    "githubUrl": "https://github.com/ReactSSA/meetup1-app"
   }
 }

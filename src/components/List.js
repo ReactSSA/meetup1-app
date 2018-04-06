@@ -41,6 +41,8 @@ const style = {
         fontSize: 10
     },
     optionButton: {
+        borderTopColor: '#DFDFDF',
+        borderTopWidth: 0.5,
         padding: 8
     },
     selected: {
@@ -123,16 +125,19 @@ class List extends React.Component {
                                 </Button>
                             </View>
                             <Button onPress={() => this._filterBy(null)} style={style.optionButton}>
-                                <Text style={filterBy === null ? style.selected : {}}>Todas</Text>
+                                <View style={style.optionButton}>
+                                    <Text style={filterBy === null ? style.selected : {}}>Todas</Text>
+                                </View>
                             </Button>
                             {FILTER_ITEMS.map((category, index) => (
                                 <Button
                                     key={`filter-button-${index}`}
-                                    onPress={() => this._filterBy(category.toLowerCase())}
-                                    style={style.optionButton}>
-                                    <Text style={filterBy === category.toLowerCase() ? style.selected : {}}>
-                                        {category}
-                                    </Text>
+                                    onPress={() => this._filterBy(category.toLowerCase())}>
+                                    <View style={style.optionButton}>
+                                        <Text style={filterBy === category.toLowerCase() ? style.selected : {}}>
+                                            {category}
+                                        </Text>
+                                    </View>
                                 </Button>
                             ))}
                         </View>
@@ -154,10 +159,14 @@ class List extends React.Component {
                                 </Button>
                             </View>
                             <Button onPress={this._orderByName} style={style.optionButton}>
-                                <Text style={orderBy === 'nome' ? style.selected : {}}>Nome</Text>
+                                <View style={style.optionButton}>
+                                    <Text style={orderBy === 'nome' ? style.selected : {}}>Nome</Text>
+                                </View>
                             </Button>
                             <Button onPress={this._orderByPrice} style={style.optionButton}>
-                                <Text style={orderBy === 'preco' ? style.selected : {}}>Preço</Text>
+                                <View style={style.optionButton}>
+                                    <Text style={orderBy === 'preco' ? style.selected : {}}>Preço</Text>
+                                </View>
                             </Button>
                         </View>
                     </View>
