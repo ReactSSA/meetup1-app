@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StatusBar, Text, View } from 'react-native';
 
 const style = {
     container: {
@@ -13,7 +13,7 @@ class App extends React.Component {
     render() {
         return (
             <View style={style.container}>
-                <Text>Está rodando!</Text>
+                <Text>Meu App está rodando!</Text>
             </View>
         );
     }
